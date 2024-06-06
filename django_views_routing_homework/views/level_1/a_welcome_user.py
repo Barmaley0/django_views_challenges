@@ -10,5 +10,8 @@ from django.http import HttpResponse
 
 
 def welcome_user_view(request):
-    welcome_message = 'Bye, user'
+    """
+    Наверное правльно будет формировать приветствие с именем юзера через {request.user.username}
+    """
+    welcome_message = "Hello User"
     return HttpResponse(welcome_message)
